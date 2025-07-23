@@ -1,6 +1,12 @@
 shopping_list = []
 
 while True:
+    print("Shopping List Manager")
+    print("1. Add Item")
+    print("2. Remove Item")
+    print("3. View List")
+    print("4. Exit")
+    
     def display_menu():
         choice = input("Enter your choice: ")
 
