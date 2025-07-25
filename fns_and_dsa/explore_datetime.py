@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 
 
-def display_current_date_time():
+def display_current_datetime():
     """ 
 
     Display the current date and time in the format YYYYY-MM-DD HH:MM:SS
@@ -23,5 +23,9 @@ def calculate_future_date():
 
     except ValueError:
         print("Invalid input. Please enter an integer value. ")
+
+if __name__ == "__main__":
+    display_current_datetime() 
+    calculate_future_date()
 
 
