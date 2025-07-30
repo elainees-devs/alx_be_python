@@ -20,6 +20,6 @@ def safe_divide(numerator, denominator):
             raise ZeroDivisionError("Denominator cannot be zero.")
         return f"The result of the division is {num / denom}"
     except ZeroDivisionError:
-        return "Error: Division by zero is not allowed."
+        return "Error: DCannot divide by zero."
     except ValueError:
         return "Error: Please enter numeric values only."
