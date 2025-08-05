@@ -33,3 +33,20 @@ class PrintBook(Book):
 
     def __repr__(self):
         return f"PrintBook('{self.title}', '{self.author}', {self.page_count})"
+    
+
+class Library:
+    def __init__(self):
+        self.books = []  
+
+    def add_book(self, book):
+        self.books.append(book)  
+
+    def list_books(self):  
+        if not self.books:
+            print("The library has no books.")
+        else:
+            print("Library Collection:")
+            for i, book in enumerate(self.books, start=1):
+                print(f"{i}. {book}")
+
