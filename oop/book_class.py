@@ -1,5 +1,5 @@
 class Book:
-    def __init__(self, title: str, author: str, year: int):
+    def __init__(self, title: str, author: str, year: int = 0):
         """Constructor: Initializes a Book instance with title, author, and year."""
         self.title = title
         self.author = author
