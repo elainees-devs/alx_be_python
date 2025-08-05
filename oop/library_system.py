@@ -7,9 +7,6 @@ class Book:
     def __str__(self):
         return f"Book: {self.title} by {self.author}"
 
-    def __del__(self):
-        print(f"Deleting book: {getattr(self, 'title', 'Unknown')}")
-
 
 class EBook(Book):
     def __init__(self, title: str, author: str, file_size: str, year: int = 0):
@@ -33,20 +30,14 @@ class PrintBook(Book):
 
     def __repr__(self):
         return f"PrintBook('{self.title}', '{self.author}', {self.page_count})"
-    
+
 
 class Library:
     def __init__(self):
-        self.books = []  
+        self.books = []
 
     def add_book(self, book):
-        self.books.append(book)  
+        self.books.append(book)
 
-    def list_books(self):  
-        if not self.books:
-            print("The library has no books.")
-        else:
-            print("Library Collection:")
-            for i, book in enumerate(self.books, start=1):
-                print(f"{i}. {book}")
-
+    def list_books(self):
+        return self.books
