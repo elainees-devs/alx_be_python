@@ -16,9 +16,9 @@ def main():
     # Delete the book instance
     del book1
 
-        # Create instances of each type of book
-    classic_book = Book("Pride and Prejudice", "Jane Austen")
-    digital_novel = EBook("Snow Crash", "Neal Stephenson", 500)
+    # Create instances of each type of book (corrected)
+    classic_book = Book("Pride and Prejudice", "Jane Austen", 1813)
+    digital_novel = EBook("Snow Crash", "Neal Stephenson", "500KB")
     paper_novel = PrintBook("The Catcher in the Rye", "J.D. Salinger", 234)
 
     # Add books to the library
