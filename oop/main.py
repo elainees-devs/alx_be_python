@@ -31,3 +31,5 @@ def main():
     print(digital_novel)
     print(paper_novel)
 
+if __name__ == "__main__":
+    main()
